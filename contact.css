@@ -180,58 +180,66 @@ body{
     text-transform: none;
 }
 
-/* newsletter code starts */
-.newsletter{
-    padding: 6rem 2rem;
-    text-align: center;
-    background-position: center;
-    background-size: cover;
-}
-
-.newsletter h3{
-    color: var(--black);
-    font-size: 3rem;
-}
-
-.newsletter p{
-    color: var(--light-blue);
-    font-size: 1.5rem;
-    padding: 1rem 0;
-}
-
-.newsletter form{
-    margin: 1rem auto;
-    max-width: 60rem;
-    height: 5rem;
-    display: flex;
-    box-shadow: var(--box-shadow);
-    overflow: hidden;
-    border-radius: 5rem;
-}
-
-.newsletter form input[type="email"]{
-    height: 100%;
+/* footer code starts */
+.footer{
+    margin-top: 50px;
+    margin-bottom: 50px;
     width: 100%;
-    font-size: 1.6rem;
-    color: var(--black);
-    text-transform: none;
-    padding: 0 2rem;
-}
-
-.newsletter form input[type="submit"]{
-    height: 100%;
-    width: 17rem;
-    font-size: 1.8rem;
-    color: var(--black);
-    background: var(--light-blue);
-    cursor: pointer;
-}
-
-.newsletter form input[type="submit"]:hover{
+    padding: 25px 15%;
     background: var(--blue);
-    color: white;
+    color: var(--white);
+    display: flex;
 }
-/* newsletter code ends */
+
+.footer div{
+    text-align: center;
+}
+
+.footer  .col-2{
+    flex-grow: 2;
+}
+
+.footer div h3{
+    font-weight: 300;
+    font-size: large;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.footer  .col-1 a{
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    margin-bottom: 10px;
+}
+
+.footer  .col-2  form input[type="email"]{
+    width: 400px;
+    height: 3rem;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+    color: var(--blue);
+    box-shadow: var(--box-shadow);
+}
+
+.footer  .col-2 form button[type="submit"]{
+    height: 1.5rem;
+    width: 17rem;
+    border-radius: 5rem;
+    color: var(--blue);
+    margin-top: -2rem;
+}
+
+.footer  .col-2 form button[type="submit"]:hover{
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: underline;
+}
+/* footer code ends */
 
 
 
