@@ -1,0 +1,321 @@
+/* basic style of website starts*/
+:root{
+    --blue:#10243a;
+    --light-blue: #6283a3;
+    --black: rgb(2, 1, 18);
+    --white: rgb(210, 200, 200);
+    --border: .1rem solid rgba(0,0,0,.1);
+    --box-shadow: 0  .5rem  1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+    
+section{
+    padding: 2rem 9%;
+}
+    
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4.5rem;
+    color: var(--black);
+}
+    
+.heading span{
+    position: relative;
+    z-index: 0;
+}
+
+.heading span::before{
+    content: '';
+    position: absolute;
+    bottom: 0.5rem; left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--blue);
+    clip-path: polygon (0 90%, 100% 80%, 100% 100%, 0 100%);
+}
+/* basic style of website ends*/
+/* header code starts*/
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    background: var(--light-blue);
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1.7rem;
+    cursor: pointer;
+    padding: .8rem 3rem;;
+}
+
+.btn:hover{
+    background: var(--blue);
+}
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 999;
+    background: rgb(215, 226, 233);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem 9%;
+}
+
+.header  .logo{
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: bolder;
+}
+
+.header  .logo span{
+    color: var(--blue);
+}
+
+.header  .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--blue);
+}
+
+.header  .navbar a:hover{
+    color: var(--light-blue);
+}
+
+.header .btn{
+    margin-top: 0;
+    background-color: var(--blue);
+    color:  rgb(215, 226, 233);
+    font-weight: 700;
+    border-color: var(--light-blue);
+}
+
+.header .btn:hover{
+    background-color: rgb(215, 226, 233);
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.header #login-btn i{
+    font-size: 2.5rem;
+    color: var(--white);
+    background-color: var(--white);
+    cursor: pointer;
+    display: none;
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    color: var(--light-blue);
+    cursor: pointer;
+    display: none;
+}
+
+body{
+    height: 300rem;
+}
+
+.header.active{
+    box-shadow: var(--box-shadow);
+    padding: 2rem 9%;
+}
+/* header code ends */
+/* service code starts */
+.swiper-pagination-bullet-active{
+    background: var(--blue);
+}
+
+.services {
+    margin-top: 7rem;
+}
+
+.services  .heading span{
+    font-size: 7.5vw;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: var(--blue);
+    background-color: white;
+}
+
+.services  .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    margin-top: 3rem;
+}
+
+.services  .box-container  .box{
+    text-align: center;
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+
+.services  .box-container  .box i{
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
+    color: var(--white);
+    background: var(--blue);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.services  .box-container  .box h3{
+    color: var(--blue);
+    font-size: 2.2rem;
+}
+
+.services  .box-container  .box p{
+    color: var(--blue);
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.services  .box-container  .box:hover{
+    background: #eee;
+}
+
+.services  .box-container  .box:hover h3{
+    color: black;
+}
+
+.services  .box-container  .box:hover p{
+    color: var(--black);
+}
+
+.services  .box-container  .box a{
+    color: var(--blue);
+}
+
+.services  .box-container  .box:hover a{
+    color: white;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.services-description  .car-sector h3{
+    color: var(--blue);
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.services-description  .car-sector p{
+    color: var(--blue);
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.services-description  .car-sector a{
+    font-size: small;
+    align-items: center;
+    padding-top: 1 1 1 1;
+}
+
+.services-description  .car-sector a:hover{
+    color: white;
+}
+
+.services-description  .parts-repair h3{
+    color: var(--blue);
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.services-description  .parts-repair p{
+    color: var(--blue);
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.services-description  .parts-repair a{
+    font-size: small;
+    align-items: center;
+    padding-top: 1 1 1 1;
+}
+
+.services-description  .parts-repair  a:hover{
+    color: white;
+}
+
+
+/* newsletter code starts */
+.newsletter{
+    margin-top: 100rem;
+    padding: 6rem 2rem;
+    text-align: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.newsletter h3{
+    color: var(--black);
+    font-size: 3rem; 
+}
+
+.newsletter p{
+    color: var(--light-blue);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.newsletter form{
+    margin: 1rem auto;
+    max-width: 60rem;
+    height: 5rem;
+    display: flex;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    border-radius: 5rem;
+}
+
+.newsletter form input[type="email"]{
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+    padding: 0 2rem;
+}
+
+.newsletter form input[type="submit"]{
+    height: 100%;
+    width: 17rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    background: var(--light-blue);
+    cursor: pointer;
+}
+
+.newsletter form input[type="submit"]:hover{
+    background: var(--blue);
+    color: white;
+}
+/* newsletter code ends */
